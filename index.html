@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>AltVerse</title>
+        <style>
+            html, body, *{
+                padding: 0;
+                margin: 0;
+            }
+            .outbox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: auto;
+                height: 100dvh;
+                margin: 0 auto;
+                background-size: 100dvw 100dvh;
+                background-image: url(BG.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                //border: solid red;
+                overflow: hidden;
+                
+            }
+            .inbox {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                height: 80%;
+                background-color: rgba(255, 255, 255, 1);
+                /* background-image: url(ppd.png);
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: cover; */
+                align-items: center;
+                margin: auto;
+                border-radius: 3dvb;
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                //border: solid red;
+                box-shadow: 0 0 5px 0;
+            }
+            .outbox-left {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                float: left;
+                //border: solid green;
+            }
+            .header-left {
+                display: flex;
+                align-items: center;
+                max-width: 30dvh;
+                padding-top: 2%;
+                padding-left: 2%;
+                //border: solid red;
+            }
+            .header-logo {
+                display: flex;
+                width: 5dvh;
+                height: auto;
+                margin: 5%;
+                padding-bottom: 0.5dvh;
+                //border: solid black;
+            }
+            .left-con {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                //border: solid black;
+            }
+            .textbox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 7%;
+                margin-top: 6dvh;
+                //border: solid yellow;
+            }
+            .website {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-top: 5%;
+                margin-left: 8%;
+                //border: solid yellow;
+            }
+            .website button {
+                background-color: #92ccdd;
+                padding: 2dvh;
+                border-radius: 5dvh;
+                width: 15dvh;
+                border: none;
+                margin-left: 1dvh;
+                margin-top: 2dvh;
+                font-size: 3dvh;
+                box-shadow: 0 0 4px 0 rgba(55, 55, 55, 0.637);
+                cursor: pointer;
+                transition: 400ms ease-in-out;
+            }
+            .website button:hover {
+                background-color: #333333;
+                color: white;
+            }
+            .outbox-right {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 50%;
+                float: right;
+                //border: solid orange;
+            }
+            .inbox-right {
+                display: flex;
+                align-content: center;
+                justify-content: right;
+                height: 10.2dvh;
+                width: auto;
+                margin: 5%;
+                border-radius: 2dvb;
+                //border: solid purple;
+            }
+            .box-right {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                width: auto;
+                height: 100%;
+                margin: 5%;
+                margin-bottom: 4dvh;
+                border-radius: 2dvb;
+                //border: solid greenyellow;
+            }
+            .showtext {
+                display: flex;
+                flex-direction: column;
+                height: 3dvh;
+                width: auto;
+                margin: 3%;
+                //border: solid red;
+            }
+            .desc-box {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: flex-end;
+                height: 100%;
+                width: auto;
+                margin: 2%;
+                //border: solid purple;
+            }
+            .desc {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                justify-content: center;
+                margin: 2%;
+                //border: solid cyan;
+            }
+            .profile {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                color: white;
+                //border: solid blue;
+                margin-right: 2%;
+                
+            }
+            .profile img {
+                border-radius: 50%;
+                width: 6dvh;
+                height: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                cursor: pointer;
+                box-shadow: 0 0 4px 0 black;
+            }
+            .name {
+                display: flex;
+                justify-content: center;
+                align-content: left;
+                width: auto;
+                height: auto;
+                margin-right: auto;
+                margin-left: 2%;
+                margin-top: auto;
+                margin-bottom: auto;
+                //border: solid black;
+            }
+            .link {
+                display: flex;
+                flex-direction: row;
+                margin-top: auto;
+                width: auto;
+                //border: solid magenta;
+                margin-left: 1%;
+            }
+            .link button {
+                background-color: #92ccdd;
+                border: none;
+                border-radius: 50%;
+                padding: 1dvh;
+                cursor: pointer;
+                margin-left: 2%;
+                margin-bottom: 3%;
+                transition: 400ms ease-in-out;
+                box-shadow: 0 0 4px 0;
+                //border: solid green;
+            }
+            .link button:hover {
+                background-color: #333333;
+                color: white;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="outbox">
+            <div class="inbox">
+                <div class="outbox-left">
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <img src="mai.png" width="100%" height="auto">                            
+                        </div>
+
+                        <p>AltVerse</p>  
+                    </div>
+
+                    <div class="left-con">
+                        <div class="textbox">
+                            <h1>Hello &</h1>
+                            <h2>Welcome</h2>
+                            <h3>This is a wormhole that will lead you to encounter another aspect of myself</h3>
+                        </div>
+
+                        <div class="website">
+                            <button onclick="link('https://sites.google.com/view/frhanrh/homepage')">WEB</button>
+                        </div>
+                    </div>
+
+                    <div class="link">
+                        <button onclick="link('https://instagram.com/frhanrh')">
+                            <img src="IG.png" style="height: 4dvh; width: auto;">
+                        </button>
+
+                        <button onclick="link('https://twitter.com/frnrmn')">
+                            <img src="X.png" style="height: 4dvh; width: auto;">
+                        </button>
+
+                        <button onclick="link('https://instagram.com/franrhmn')">
+                            <img src="mrc.png" style="height: 4dvh; width: auto;">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="outbox-right">
+                    <div class="inbox-right">
+                        <div class="name">
+                            <h4>faran</h2>
+                        </div>
+
+                        <div class="profile">
+                            <img src="me.webp">
+                        </div>
+                    </div>
+
+                    <div class="box-right">
+                        <div class="showtext">
+                            <h2 style="color: white; font-size: 150%;">ON-GOING...</h2>
+                        </div>
+
+                        <div class="desc-box">
+                            <div class="desc">
+                                <h2 style="font-size: 4dvh;">Time Reverse</h2>
+                                <h2 style="font-size: small; font-weight: normal;">"one moment, time moves backward."</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function link(domain) {
+                window.open(domain)
+            }
+        </script>
+
+    </body>
+</html>
